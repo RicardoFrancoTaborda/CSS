@@ -3,19 +3,28 @@
 <head>
 	<title></title>
 	<style>
-		body {
-			background-image: url("fotografias/Lobo.png");
-			background-repeat: no-repeat;
-			background-position: right top;
-			margin-right: 300px;
-			background-attachment: fixed;
-			}
-		
+	.cuadro {
+		background-color: lightgrey;
+		width: 300px;
+		border: 15px solid green;
+		padding: 50px;
+		margin:20pxs;
+	}
+	div {
+		width: 380px;
+		padding: 10px;
+		border: 5px solid blue;
+		margin:0;
+	}
 	</style>
 </head>
 
 <body>
-	<h1 style="color: black; font-size: 100px;">HOLA MUNDO</h1>
-	<p style="color:blue; font-size: 60px;">esta pagina es una imagen de background</p>
-	<p style="color: cyan; font-size:40px;">Tenemos varias opciones para repetir sea (repeat:repeat-x) o simpleamente (repeat: no-repeat)</p>
+	<h1 >Demostracion de modelo de caja</h1>
+	<p>The CSS box model is essentially a box that wraps around every HTML element. It consists of: borders, padding, margins, and the actual content.</p>
+	<p class="cuadro">Este texto es el contenido del cuadro. Hemos agregado un relleno de 50 píxeles, un margen de 20 píxeles y un borde verde de 15 píxeles. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepcional sint occasionecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<img src="fotografias/mario.png" width="80%" alt="mario  bros">
+	<div>la imagen de Mario tiene total de 380 px cuadro de 10px y el borde es de 5px solido en azul</div>
+
 </html>
