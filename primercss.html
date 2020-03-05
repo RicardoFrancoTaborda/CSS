@@ -1,49 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<style>
-	body {
-		margin: 0;
-	}
-	
-	ul.topnav {
+	ul {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
-		background-color: black;
 		overflow: hidden;
-		
+		background-color: black;
+
 	}
-	ul.topnav li {
+	 li {
 		float: left;
 	}
 
-	ul.topnav li a {
-		display: block;
+	li a, .submenu {
+		display: inline-block;
 		color: white;
 		text-align: center;
 		padding: 14px 16px;
 		text-decoration: none;
+
 	}
 
-	ul.topnav li a:hover:not(.active) {
-		background-color: #555;
-		color: black;
+	li a:hover, .submenu:hover .submenu {
+		background-color: gray;
+		
 	}
-	ul.topnav li a.active {
-		background-color: green;
+	li.submenu{
+		display: inline-block;
 	}
-	ul.topnav li.right {
-		float: right;
+	.submenu-content {
+		display: none;
+		position: absolute;
+		background-color: gray;
+		min-width: 160px;
+		box-shadow: green;
+		z-index: 1;
 	}
-	@media only screen and (max-width: 800px) {
-		ul.topnav li.right, 
-  		ul.topnav li {float: none;}
-  	}
-
+	.submenu-content a {
+		 color: white;
+		 padding: 12px 16px;
+		 text-decoration: none;
+		 display: block;
+		 text-align: left;
+	}
 	
+	.submenu-content a:hover  {
+		background-color: black;
+	}
+	.submenu:hover .submenu-content {
+ 	 display: block;
+	}
 
 	</style>
 </head>
@@ -52,13 +61,40 @@
 	
 	
 
-	<h2>ejemplo de barra de navegacion para moviles</h2>
-	<ul class="topnav">
-		<li><a class="active"; href="#Inicio">Inicio</a></li>
-		<li><a href="#Tatuajes">Tatuajes</a></li>
-		<li><a href="#Piercings">Piercings</a></li>
-		<li class="right"><a href="#Covers">Covers</a></li>
+	<h2>ejemplo de la barra que tenga links desplegables</h2>
 
+	<ul>
+		<li class="submenu">
+			<a href="javascript:void(0)" class="submenu">Inicio</a>
+			<div class="submenu-content">
+				<a href="#">Facebook</a>
+				<a href="#">Instagram</a>
+				<a href="#">Twiter</a>
+			</div>
+		</li>
+		<li class="submenu">
+			<a href="javascript:void(0)" class="submenu">Tatuajes</a>
+			<div class="submenu-content">
+				<a href="#">Trabajos 2018</a>
+				<a href="#">Trabajos 2019</a>
+				<a href="#">Trabajos 2020</a>
+			</div>
+		</li>
+		<li class="submenu">
+			<a href="javascript:void(0)" class="submenu">Piercings</a>
+			<div class="submenu-content">
+				<a href="#">Microdermal</a>
+				<a href="#">Expansiones</a>
+			</div>
+		</li>
+		<li class="submenu">
+			<a href="javascript:void(0)" class="submenu">Covers</a>
+			<div class="submenu-content">
+				<a href="#">Pequeños</a>
+				<a href="#">Medianos</a>
+				<a href="#">Grandes</a>
+			</div>
+		</li>
 	</ul>
 
 	<div style="padding: 0px 16px;"> 
