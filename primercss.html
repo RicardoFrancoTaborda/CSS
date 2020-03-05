@@ -1,56 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 	<style>
-	div.background {
-		background:url(fotografias/Lobo.png) repeat;
-		border:2px solid green; 
-	}
-	div.transbox {
-		margin: 50px;
-		background-color: #ffffff;
-		border: 3px solid blue;
-		opacity: 0.6;
-	}
-	div.transbox p{
-		margin: 5%;
-		font-weight: bold;
-		color: #000000;
-	}
 	body {
 		margin: 0;
 	}
 	
-	ul {
+	ul.topnav {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
 		background-color: black;
 		overflow: hidden;
-		position: fixed;
-		top:0;
-		width: 100%;
+		
 	}
-	li {
+	ul.topnav li {
 		float: left;
 	}
-	li a {
+
+	ul.topnav li a {
 		display: block;
 		color: white;
 		text-align: center;
 		padding: 14px 16px;
 		text-decoration: none;
 	}
-	li a:hover:not(.active) {
+
+	ul.topnav li a:hover:not(.active) {
 		background-color: #555;
 		color: black;
 	}
-	@media only screen and (max-width: 800px) {
-		body, li a {
-			width: 100%;
-		}
+	ul.topnav li a.active {
+		background-color: green;
 	}
+	ul.topnav li.right {
+		float: right;
+	}
+	@media only screen and (max-width: 800px) {
+		ul.topnav li.right, 
+  		ul.topnav li {float: none;}
+  	}
 
 	
 
@@ -58,32 +49,23 @@
 </head>
 
 <body>
-	<pre>
-		
+	
+	
 
-
-
-
-	</pre>
-	<div class="background">
-		<div class="transbox">
-			<p>Pardo verde Pardo verde Pardo verde Pardo verde Pardo verde Pardo verde</p>
-		</div>
-	</div>
-
-	<h2>ejemplo de barra de navegacion horizontal</h2>
-	<ul>
+	<h2>ejemplo de barra de navegacion para moviles</h2>
+	<ul class="topnav">
 		<li><a class="active"; href="#Inicio">Inicio</a></li>
 		<li><a href="#Tatuajes">Tatuajes</a></li>
 		<li><a href="#Piercings">Piercings</a></li>
-		<li><a href="#Covers">Covers</a></li>
+		<li class="right"><a href="#Covers">Covers</a></li>
 
 	</ul>
-	<div style="margin-left: 25%;padding: 1px 16px;height: 1000px;"> 
+
+	<div style="padding: 0px 16px;"> 
 	<h2>Fijo la barra de navegacion</h2>
 	<h3>Queda con una barra scroll para q se pueda mover de arriba a abajo</h3>
-	<p>blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla</p>
-	<p>sirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsir</p>
+	<p>Responsive Responsive Responsive Responsive Responsive Responsive Responsive Responsive Responsive Responsive Responsive Responsive Responsive Responsive Responsive Responsive Responsive Responsive </p>
+	<p>celular celular celular celular celular celular celular celular celular celular celular celular celular celular celular celular celular celular celular celular celular celular celular </p>
 	<p>algo</p>
 	<p>algo</p>
 	<p>algo</p>
