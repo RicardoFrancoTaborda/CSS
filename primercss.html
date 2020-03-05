@@ -3,19 +3,92 @@
 <head>
 	<title></title>
 	<style>
-	img {
-		opacity: 0.35;
+	div.background {
+		background:url(fotografias/Lobo.png) repeat;
+		border:2px solid green; 
 	}
-	img:hover {
-		opacity: 1.0;
+	div.transbox {
+		margin: 50px;
+		background-color: #ffffff;
+		border: 3px solid blue;
+		opacity: 0.6;
 	}
+	div.transbox p{
+		margin: 5%;
+		font-weight: bold;
+		color: #000000;
+	}
+	body {
+		margin: 0;
+	}
+	
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		width: 25%;
+		background-color: black;
+		position: fixed;
+		height: 100%;
+		overflow: auto;
+	}
+	li a {
+		display: block;
+		color: white;
+		padding: 8px 16px;
+		text-decoration: none;
+	}
+	li a:hover:not(.active) {
+		background-color: #555;
+		color: black;
+	}
+	@media only screen and (max-width: 800px) {
+		body, li a {
+			width: 100%;
+		}
+	}
+
+	
+
 	</style>
 </head>
 
 <body>
-	<h1>La  imagen sera opaca y solo se vera masnitida al poner e mause encima</h1>
-	<p>Cambiara al momento de poner el mouse encima de la imagen</p>
-	<img src="fotografias/arbolito.jpg" alt="arbolito" width="200" height="150">
-	<img src="fotografias/Lobo.png" alt="lobo" width="200" height="150">
-	<img src="fotografias/mario.png" alt="mario" width="200" height="150">
+	<div class="background">
+		<div class="transbox">
+			<p>Pardo verde Pardo verde Pardo verde Pardo verde Pardo verde Pardo verde</p>
+		</div>
+	</div>
+
+	<h2>ejemplo de barra de navegacion vertical</h2>
+	<ul>
+		<li><a class="active"; href="#Inicio">Inicio</a></li>
+		<li><a href="#Tatuajes">Tatuajes</a></li>
+		<li><a href="#Piercings">Piercings</a></li>
+		<li><a href="#Covers">Covers</a></li>
+
+	</ul>
+	<div style="margin-left: 25%;padding: 1px 16px;height: 1000px;"> 
+	<h2>Fijo la barra de navegacion</h2>
+	<h3>Queda con una barra scroll para q se pueda mover de arriba a abajo</h3>
+	<p>blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla</p>
+	<p>sirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsirsir</p>
+	<p>algo</p>
+	<p>algo</p>
+	<p>algo</p>
+	<p>algo</p>
+	<p>algo</p>
+	<p>algo</p>
+	<p>algo</p>
+	<p>algo</p>
+	<p>algo</p>
+	<p>algo</p>
+	<p>algo</p>
+	<p>algo</p>
+	<p>algo</p>
+	<p>algo</p>
+	<p>algo</p>
+	</div>
+
+
 </html>
